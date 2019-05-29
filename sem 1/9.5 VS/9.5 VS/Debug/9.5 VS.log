@@ -1,0 +1,7 @@
+﻿  vector_utils.cpp
+c:\users\pawel\onedrive\pulpit\paweł\studia\zadania domowe\9.5 vs\9.5 vs\vector_utils.cpp(26): fatal error C1010: Nieoczekiwany koniec pliku podczas wyszukiwania prekompilowanego nagłówka. Czy zapomniano dodać "#include "stdafx.h"" do twojego źródła?
+  sort.cpp
+c:\users\pawel\onedrive\pulpit\paweł\studia\zadania domowe\9.5 vs\9.5 vs\sort.cpp(167): fatal error C1010: Nieoczekiwany koniec pliku podczas wyszukiwania prekompilowanego nagłówka. Czy zapomniano dodać "#include "stdafx.h"" do twojego źródła?
+  9.5 VS.cpp
+c:\users\pawel\onedrive\pulpit\paweł\studia\zadania domowe\9.5 vs\9.5 vs\9.5 vs.cpp(45): fatal error C1010: Nieoczekiwany koniec pliku podczas wyszukiwania prekompilowanego nagłówka. Czy zapomniano dodać "#include "stdafx.h"" do twojego źródła?
+  Generowanie kodu...

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1518184397 source:c:\users\pawel\onedrive\pulpit\pawe³\studia\zadania domowe\9.1 poprawion\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"vector_utils.h"
+
+1518183611 c:\users\pawel\onedrive\pulpit\pawe³\studia\zadania domowe\9.1 poprawion\vector_utils.h
+
+1518183681 source:c:\users\pawel\onedrive\pulpit\pawe³\studia\zadania domowe\9.1 poprawion\vector_utils.cpp
+	<stdio.h>
+	"vector_utils.h"
+

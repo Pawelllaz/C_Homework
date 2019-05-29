@@ -1,0 +1,6 @@
+﻿  24.12.cpp
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.12\24.12\24.12.cpp(49): warning C4244: "=": konwersja z "const int" do "float", możliwa utrata danych
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.12\24.12\24.12.cpp(50): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.12\24.12\24.12.cpp(97): warning C4244: "=": konwersja z "const int" do "float", możliwa utrata danych
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.12\24.12\24.12.cpp(98): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  24.12.vcxproj -> C:\Users\pawel\Desktop\Paweł\studia\zadania domowe 2\24.12\Debug\24.12.exe

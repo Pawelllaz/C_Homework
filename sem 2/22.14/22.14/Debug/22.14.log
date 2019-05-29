@@ -1,0 +1,5 @@
+﻿  22.14.cpp
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\22.14\22.14\22.14.cpp(9): error C3861: "validate": identyfikatora nie odnaleziono
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\22.14\22.14\22.14.cpp(10): error C3861: "validate": identyfikatora nie odnaleziono
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\22.14\22.14\22.14.cpp(117): error C2177: za duża stała
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\22.14\22.14\22.14.cpp(117): warning C4477: „printf”: ciąg formatu „%lf” wymaga argumentu typu „double”, ale argument 1 ze zmienną liczbą argumentów ma typ „__int64”

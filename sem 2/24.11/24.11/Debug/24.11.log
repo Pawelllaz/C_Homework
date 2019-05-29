@@ -1,0 +1,7 @@
+﻿  24.11.cpp
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.11\24.11\24.11.cpp(54): warning C4244: "=": konwersja z "const int" do "float", możliwa utrata danych
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.11\24.11\24.11.cpp(55): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.11\24.11\24.11.cpp(79): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 1 ze zmienną liczbą argumentów ma typ „int”
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.11\24.11\24.11.cpp(79): warning C4477: „fscanf”: ciąg formatu „%d” wymaga argumentu typu „int *”, ale argument 2 ze zmienną liczbą argumentów ma typ „int”
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.11\24.11\24.11.cpp(88): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „double”
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\24.11\24.11\24.11.cpp(79): error C4700: użycie niezainicjowanej zmiennej lokalnej "point1"

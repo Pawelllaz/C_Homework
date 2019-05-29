@@ -1,0 +1,2 @@
+wynik gracza asd = 30,  01:03:56 Jul 17 2018
+wynik gracza paw = 3, poziom latwy,  16:17:01 Oct 11 2018

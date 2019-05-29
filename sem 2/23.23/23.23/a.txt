@@ -1,0 +1,7 @@
+seat.txt
+against.txt
+may.txt
+draw.txt
+bread.txt
+fact.txt
+suit.txt

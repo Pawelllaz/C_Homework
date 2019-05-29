@@ -1,0 +1,2 @@
+﻿  vector_utils.cpp
+c:\users\pawel\onedrive\pulpit\paweł\studia\zadania domowe\9.1\9.1\9.1\vector_utils.cpp(27): fatal error C1010: Nieoczekiwany koniec pliku podczas wyszukiwania prekompilowanego nagłówka. Czy zapomniano dodać "#include "stdafx.h"" do twojego źródła?

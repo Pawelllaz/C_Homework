@@ -1,0 +1,4 @@
+﻿  26.3.cpp
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\26.3\26.3\26.3.cpp(15): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+c:\users\pawel\desktop\paweł\studia\zadania domowe 2\26.3\26.3\26.3.cpp(30): warning C4244: "=": konwersja z "int" do "float", możliwa utrata danych
+  26.3.vcxproj -> C:\Users\pawel\Desktop\Paweł\studia\zadania domowe 2\26.3\Debug\26.3.exe

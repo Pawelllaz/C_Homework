@@ -1,0 +1,7 @@
+﻿  vector_utils.cpp
+c:\users\pawel\onedrive\pulpit\paweł\studia\zadania domowe\9.6\9.6\vector_utils.cpp(26): fatal error C1010: Nieoczekiwany koniec pliku podczas wyszukiwania prekompilowanego nagłówka. Czy zapomniano dodać "#include "stdafx.h"" do twojego źródła?
+  sort.cpp
+c:\users\pawel\onedrive\pulpit\paweł\studia\zadania domowe\9.6\9.6\sort.cpp(188): fatal error C1010: Nieoczekiwany koniec pliku podczas wyszukiwania prekompilowanego nagłówka. Czy zapomniano dodać "#include "stdafx.h"" do twojego źródła?
+  9.6.cpp
+c:\users\pawel\onedrive\pulpit\paweł\studia\zadania domowe\9.6\9.6\9.6.cpp(40): fatal error C1010: Nieoczekiwany koniec pliku podczas wyszukiwania prekompilowanego nagłówka. Czy zapomniano dodać "#include "stdafx.h"" do twojego źródła?
+  Generowanie kodu...

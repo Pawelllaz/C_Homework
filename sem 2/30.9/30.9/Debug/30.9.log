@@ -1,0 +1,5 @@
+﻿  30.9.cpp
+c:\users\paweł\onedrive\studia\zadania domowe 2\30.9\30.9\30.9.cpp(63): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „uint64_t”
+  c:\users\paweł\onedrive\studia\zadania domowe 2\30.9\30.9\30.9.cpp(63): note: rozważ użycie elementu „%lld” w ciągu formatu
+  c:\users\paweł\onedrive\studia\zadania domowe 2\30.9\30.9\30.9.cpp(63): note: rozważ użycie elementu „%I64d” w ciągu formatu
+  30.9.vcxproj -> C:\Users\Paweł\OneDrive\studia\zadania domowe 2\30.9\Debug\30.9.exe

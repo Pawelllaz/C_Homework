@@ -1,0 +1,390 @@
+#include "stdafx.h"
+#include <stdio.h>
+//#include <Windows.h>
+
+struct student_t
+{
+	char name[20];
+	char surname[40];
+	int index;
+	char field[50];
+	char faculty[80];
+	int year;
+};
+struct student_t* read(struct student_t* p, int *err_code)
+{
+	if (p == NULL)
+	{
+		*err_code = 1;
+		return NULL;
+	}
+	p->index = 0;
+	char tym;
+	int spr = 0;
+	printf("Mickiewicz\n");
+	for (int i = 0;; i++)
+	{
+		spr = scanf("%c", &tym);
+		if (spr != 1)
+		{
+			*err_code = 1;
+			return 0;
+		}
+		if (tym == ',')
+		{
+			spr = 0;
+			*((*p).name + i) = 0;
+			break;
+		}
+		else spr++;
+		if ((tym >= 'a' && tym <= 'z') || (tym >= 'A' && tym <= 'Z')) *((*p).name + i) = tym;
+		*err_code = 2;
+		if (tym == '\n') break;
+	}
+	if (spr != 0)
+	{
+		*err_code = 1;
+		return 0;
+	}
+	for (int i = 0;; i++)
+	{
+		scanf("%c", &tym);
+		if (tym == ',')
+		{
+			spr = 0;
+			*((*p).surname + i) = 0;
+			break;
+		}
+		else spr++;
+		if ((tym >= 'a' && tym <= 'z') || (tym >= 'A' && tym <= 'Z') || tym == '-' || (tym == ' ' && i != 0)) *((*p).surname + i) = tym;
+		else i--;
+		*err_code = 3;
+		if (tym == '\n') break;
+	}
+	if (spr != 0)
+	{
+		*err_code = 2;
+		return 0;
+	}
+	int liczba;
+	spr = scanf("%d", &liczba);
+	if (spr != 1)
+	{
+		*err_code = 1;
+		return 0;
+	}
+	p->index = liczba;
+	for (;;)
+	{
+		scanf("%c", &tym);
+		if (tym == ' ') break;
+		if (tym == '\n')
+		{
+			*err_code = 4;
+			return 0;
+		}
+	}
+	for (int i = 0;; i++)
+	{
+		scanf("%c", &tym);
+		if (tym == ',')
+		{
+			spr = 0;
+			*((*p).field + i) = 0;
+			break;
+		}
+		else spr++;
+		if ((tym >= 'a' && tym <= 'z') || (tym >= 'A' && tym <= 'Z') || tym == '-' || (tym == ' ' && i != 0)) *((*p).field + i) = tym;
+		else i--;
+		*err_code = 5;
+		if (tym == '\n') break;
+	}
+	if (spr != 0)
+	{
+		*err_code = 3;
+		return 0;
+	}
+	for (;;)
+	{
+		scanf("%c", &tym);
+		if (tym == ' ') break;
+		if (tym == '\n')
+		{
+			*err_code = 5;
+			return 0;
+		}
+	}
+	for (int i = 0;; i++)
+	{
+		scanf("%c", &tym);
+		if (tym == ',')
+		{
+			spr = 0;
+			*((*p).faculty + i) = 0;
+			break;
+		}
+		else spr++;
+		if ((tym >= 'a' && tym <= 'z') || (tym >= 'A' && tym <= 'Z') || tym == '-' || (tym == ' ' && i != 0)) *((*p).faculty + i) = tym;
+		else i--;
+		*err_code = 6;
+		if (tym == '\n') break;
+	}
+	if (spr != 0)
+	{
+		*err_code = 4;
+		return 0;
+	}
+	spr = scanf("%d", &liczba);
+	if (spr != 1)
+	{
+		*err_code = 1;
+		return 0;
+	}
+	p->year = liczba;
+	*err_code = 0;
+	return p;
+
+}
+//==========================================================================
+struct student_t* set_name(struct student_t* student, const char * name, int *err_code)
+{
+	if (student == NULL || name == NULL)
+	{
+		if (err_code != NULL) *err_code = 1;
+		return 0;
+	}
+	for (int i = 0;; i++)
+	{
+		if (*(name + i) == 0 || *(name + i) == '\n')
+		{
+			*((*student).name + i) = 0;
+			break;
+		}
+		if (i == 19)
+		{
+			*err_code = 1;
+			return 0;
+		}
+		*((*student).name + i) = *(name + i);
+	}
+	if (err_code != NULL) *err_code = 0;
+	return student;
+}
+struct student_t* set_surname(struct student_t* student, const char * surname, int *err_code)
+{
+	if (student == NULL || surname == NULL)
+	{
+		if (err_code != NULL) *err_code = 1;
+		return 0;
+	}
+	for (int i = 0;; i++)
+	{
+		if (*(surname + i) == 0 || *(surname + i) == '\n')
+		{
+			*((*student).surname + i) = 0;
+			break;
+		}
+		if (i == 19)
+		{
+			*err_code = 1;
+			return 0;
+		}
+		*((*student).surname + i) = *(surname + i);
+	}
+	if (err_code != NULL) *err_code = 0;
+	return student;
+}
+struct student_t* set_field(struct student_t* student, const char * field, int *err_code)
+{
+	if (student == NULL || field == NULL)
+	{
+		if (err_code != NULL) *err_code = 1;
+		return 0;
+	}
+	for (int i = 0;; i++)
+	{
+		if (*(field + i) == 0 || *(field + i) == '\n')
+		{
+			*((*student).field + i) = 0;
+			break;
+		}       if (i == 19)
+		{
+			*err_code = 1;
+			return 0;
+		}
+		*((*student).field + i) = *(field + i);
+	}
+	if (err_code != NULL) *err_code = 0;
+	return student;
+}
+struct student_t* set_faculty(struct student_t* student, const char * faculty, int *err_code)
+{
+	if (student == NULL || faculty == NULL)
+	{
+		if (err_code != NULL) *err_code = 1;
+		return 0;
+	}
+	for (int i = 0;; i++)
+	{
+		if (*(faculty + i) == 0 || *(faculty + i) == '\n')
+		{
+			*((*student).faculty + i) = 0;
+			break;
+		}
+		if (i == 79)
+		{
+			*err_code = 1;
+			return 0;
+		}
+		*((*student).faculty + i) = *(faculty + i);
+	}
+	if (err_code != NULL) *err_code = 0;
+	return student;
+}
+struct student_t* set_year(struct student_t* student, int year, int *err_code)
+{
+	if (student == NULL)
+	{
+		if (err_code != NULL) *err_code = 1;
+		return 0;
+	}
+	student->year = year;
+	if (err_code != NULL) *err_code = 0;
+	return student;
+}
+struct student_t* set_index(struct student_t* student, int index, int *err_code)
+{
+	if (student == NULL)
+	{
+		if (err_code != NULL) *err_code = 1;
+		return 0;
+	}
+	student->index = index;
+	if (err_code != NULL) *err_code = 0;
+	return student;
+}
+//===================================================================================
+struct student_t* set(struct student_t* student, const char * name,
+	const char * surname, int index,
+	const char * field, const char * faculty,
+	int year, int *err_code)
+{
+	if (student == NULL || name == NULL || surname == NULL || field == NULL || faculty == NULL)
+	{
+		if (err_code != NULL) *err_code = 1;
+		return student;
+	}
+	set_name(student, name, err_code);
+	if (*err_code == 1) return student;
+	set_surname(student, surname, err_code);
+	if (*err_code == 1) return student;
+	set_field(student, field, err_code);
+	if (*err_code == 1) return student;
+	set_faculty(student, faculty, err_code);
+	if (*err_code == 1) return student;
+	set_year(student, year, err_code);
+	if (*err_code == 1) return student;
+	set_index(student, index, err_code);
+	if (*err_code == 1) return student;
+
+	if (err_code != NULL) *err_code = 0;
+	return student;
+}
+//=================================================================================
+void display(const struct student_t* p)
+{
+	if (p == NULL) return;
+	if (*p->field == 'a' || *p->field == 'A' || *p->field == 'e' || *p->field == 'E' || *p->field == 'i' || *p->field == 'I' || *p->field == 'o' || *p->field == 'O' || *p->field == 'u' || *p->field == 'U' || *p->field == 'Y' || *p->field == 'y')
+		printf("%s %s, index number: %d, was an %s at the Faculty of %s, in %d", p->name, p->surname, p->index, p->field, p->faculty, p->year);
+	else printf("%s %s, index number: %d, was a %s at the Faculty of %s, in %d", p->name, p->surname, p->index, p->field, p->faculty, p->year);
+}
+//=============================================================================================
+void display_name(const struct student_t* student)
+{
+	if (student == NULL) return;
+	printf("Student name: %s\n", student->name);
+}
+void display_surname(const struct student_t* student)
+{
+	if (student == NULL) return;
+	printf("Student surname: %s\n", student->surname);
+}
+void display_field(const struct student_t* student)
+{
+	if (student == NULL) return;
+	printf("Field: %s\n", student->field);
+}
+void display_faculty(const struct student_t* student)
+{
+	if (student == NULL) return;
+	printf("Faculty %s\n", student->faculty);
+}
+void display_year(const struct student_t* student)
+{
+	if (student == NULL) return;
+	printf("Year: %d\n", student->year);
+}
+void display_index(const struct student_t* student)
+{
+	if (student == NULL) return;
+	printf("Index: %d\n", student->index);
+}
+//==================================================================================================
+int main()
+{
+	struct student_t student1, student2;
+	int err;
+	read(&student1, &err);
+	if (err == 0) display(&student1);
+	else
+	{
+		printf("error");
+		return err;
+	}
+	printf("\n");
+	set_name(&student2, "Pawel", &err);
+	if (err)
+	{
+		printf("error");
+		return err;
+	}
+	set_surname(&student2, "Lazicki", &err);
+	if (err)
+	{
+		printf("error");
+		return err;
+	}
+	set_field(&student2, "Informatyka", &err);
+	if (err)
+	{
+		printf("error");
+		return err;
+	}
+	set_faculty(&student2, "Weeia", &err);
+	if (err)
+	{
+		printf("error");
+		return err;
+	}
+	set_index(&student2, 215801, &err);
+	if (err)
+	{
+		printf("error");
+		return err;
+	}
+	set_year(&student2, 2017, &err);
+	if (err)
+	{
+		printf("error");
+		return err;
+	}
+	display_name(&student2);
+	display_surname(&student2);
+	display_index(&student2);
+	display_field(&student2);
+	display_faculty(&student2);
+	display_year(&student2);
+
+	//system("PAUSE");
+	return 0;
+}

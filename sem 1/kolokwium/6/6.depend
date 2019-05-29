@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1515753859 source:c:\users\pawel\onedrive\pulpit\pawe³\studia\zadania domowe\kolokwium\6\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<cstdlib>
+	<time.h>
+

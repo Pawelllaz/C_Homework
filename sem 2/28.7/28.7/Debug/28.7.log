@@ -1,0 +1,5 @@
+﻿  28.7.cpp
+c:\users\pawel\onedrive\studia\zadania domowe 2\28.7\28.7\28.7.cpp(13): warning C4477: „printf”: ciąg formatu „%d” wymaga argumentu typu „int”, ale argument 1 ze zmienną liczbą argumentów ma typ „dictionary_t *”
+  dictionary.cpp
+  Generowanie kodu...
+  28.7.vcxproj -> C:\Users\pawel\OneDrive\studia\zadania domowe 2\28.7\Debug\28.7.exe
